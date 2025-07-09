@@ -24,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{
+defineProps<{
   messages: { id: number; text: string; createdAt: Date; removed: boolean }[]
 }>()
 const formatDate = (date: Date) =>
